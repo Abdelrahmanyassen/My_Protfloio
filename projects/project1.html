@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IOT Dashboard | Portfolio</title>
+  <link rel="stylesheet" href="../output.css" />
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+    })();
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="../index.html#work" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2 font-medium transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Back to Portfolio
+      </a>
+      <div class="flex items-center gap-3">
+        <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 transition-all duration-200" aria-label="Toggle dark mode">
+          <svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+          <svg id="moonIcon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+        </button>
+        <a href="../index.html" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 sm:px-6 py-12 max-w-4xl">
+    <header class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">IOT Dashboard</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+        An interactive dashboard for monitoring and managing Internet of Things devices. It features real-time data visualization, device status overview, and a responsive layout built with HTML5, Tailwind CSS, and JavaScript.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-4">
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">HTML5</span>
+        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Tailwind CSS</span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">JavaScript</span>
+      </div>
+    </header>
+
+    <!-- Project images -->
+    <section class="space-y-8">
+      <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Project Screenshots</h2>
+      <div class="space-y-6">
+        <div class="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg">
+          <img src="../images/project1.png" alt="IOT Dashboard main view" class="w-full h-auto object-cover" onerror="this.parentElement.classList.add('bg-gray-200', 'dark:bg-gray-700'); this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hidden w-full aspect-video items-center justify-center text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700">
+            <span>Add your screenshot</span>
+          </div>
+          <p class="p-3 text-sm text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/50">Main dashboard view</p>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg">
+          <img src="../images/project1.2.png" alt="IOT Dashboard device view" class="w-full h-auto object-cover" onerror="this.parentElement.classList.add('bg-gray-200', 'dark:bg-gray-700'); this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hidden w-full aspect-video items-center justify-center text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700">
+            <span>Add your screenshot</span>
+          </div>
+          <p class="p-3 text-sm text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/50">Device or chart view</p>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg bg-gray-100 dark:bg-gray-800 min-h-[200px] flex items-center justify-center">
+          <p class="text-gray-500 dark:text-gray-400 p-6 text-center">Optional third screenshot</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+      <a href="../index.html#work" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Back to Portfolio
+      </a>
+    </div>
+  </main>
+
+  <script>
+    (function() {
+      var html = document.documentElement;
+      var theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'dark') html.classList.add('dark'); else html.classList.remove('dark');
+
+      document.getElementById('darkModeToggle').addEventListener('click', function() {
+        html.classList.toggle('dark');
+        var newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+##first Build 3 files (index.html & input.css & output.css)##
+##second put this command in input.css file(@tailwind base; @tailwind components; @tailwind utilities;)
+##third run this command in terminal :-
+
+npm init -y
+
+npm uninstall tailwindcss 
+npm install -D tailwindcss@3 postcss autoprefixer
+
+npx tailwindcss init -p
+
+npm run build (او) npx tailwindcss -i ./input.css -o ./output.css --watch
+
+
+
